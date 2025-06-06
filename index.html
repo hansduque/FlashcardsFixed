@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Flashcards App</h1>
+
+  <!-- Theme Toggle -->
+  <label>
+    <input type="checkbox" id="themeToggle" />
+    Dark Mode
+  </label>
+
+  <!-- Flashcard Form -->
+  <form id="flashcardForm">
+    <input type="text" id="questionInput" placeholder="Enter question" required />
+    <input type="text" id="answerInput" placeholder="Enter answer" required />
+    <input type="text" id="categoryInput" placeholder="Enter category (e.g., Math)" required />
+    <button type="submit">Add Flashcard</button>
+  </form>
+
+  <!-- Category Filter -->
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+  </select>
+
+  <!-- Utility Buttons -->
+  <div class="button-group">
+    <button id="shuffleButton">Shuffle/Reset Flashcards</button>
+    <button id="clearButton">Reset to Default Flashcards</button>
+    <button id="exportButton">Export Flashcards</button>
+    <input type="file" id="importFile" accept=".json" />
+    <button id="startQuizButton">Start Quiz</button>
+  </div>
+
+  <!-- Flashcards Display -->
+  <div id="flashcardContainer"></div>
+
+  <!-- Quiz Mode Section -->
+  <div id="quizContainer" style="display: none;"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

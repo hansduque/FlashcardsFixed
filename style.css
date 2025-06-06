@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-  color: #555;
+  color: #424141;
 }
 
 /* ===== Flashcards ===== */
@@ -34,6 +34,7 @@ p {
   width: 300px;
   height: 200px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .flashcard-inner {
@@ -78,7 +79,7 @@ p {
 
 /* Dark Mode Styles */
 body.dark-mode .front {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -173,7 +174,7 @@ body.dark-mode .option-btn.correct {
 }
 
 body.dark-mode .option-btn.wrong {
-  background-color: #e57373;
+  background-color: #d3eb1e;
   color: #121212;
   border-color: #b71c1c;
 }
